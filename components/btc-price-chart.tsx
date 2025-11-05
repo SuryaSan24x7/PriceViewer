@@ -104,7 +104,7 @@ export function BitcoinPriceChart() {
               <ChartTooltip
                 content={
                   <ChartTooltipContent
-                    labelFormatter={(value) => new Date(value).toLocaleDateString()}
+                    labelFormatter={(value) => value as string}
                     valueFormatter={(value) =>
                       new Intl.NumberFormat("en-US", {
                         style: "currency",
